@@ -67,7 +67,7 @@ function App() {
 
   const reset = (): void => {
     shuffle();
-    setCorrectCard(Math.floor(Math.random() * 10));
+    setCorrectCard(Math.floor(Math.random() * 9));
     setGuessedCard(-1);
   };
 
@@ -113,7 +113,7 @@ function App() {
 
         <div className="flex justify-center gap-4 text-lg">
           <button
-            className="py-1 px-5 border border-gray-300 rounded hover:border-yellow-500 hover:bg-yellow-500 disabled:border-gray-700 disabled:bg-gray-700 disabled:hover:border-gray-700 disabled:hover:bg-gray-700"
+            className="py-1 px-5 border border-gray-300 rounded hover:border-yellow-500 hover:bg-yellow-500 disabled:bg-gray-700 disabled:hover:bg-gray-700"
             onClick={handlePlayClick}
             disabled={gameState !== GameState.None}
           >
